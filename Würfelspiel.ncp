@@ -1,0 +1,83 @@
+<Project>
+  <Name>Würfelspiel</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Würfelspiel</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Wuerfel</Name>
+        <Access>Public</Access>
+        <Location left="40" top="131" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int seiten</Member>
+        <Member type="Field">int wurfergebnis</Member>
+        <Member type="Field">Rectangle rectangle</Member>
+        <Member type="Field">bool hold</Member>
+        <Member type="Property">public int Seiten { get; }</Member>
+        <Member type="Property">public int Wurfergebnis { get; }</Member>
+        <Member type="Property">public Rectangle Rectangle { get; }</Member>
+        <Member type="Property">public bool Hold { get; set; }</Member>
+        <Member type="Method">public int Wuerfeln()</Member>
+        <Member type="Constructor">public Wuerfel(int seiten)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Kniffel</Name>
+        <Access>Public</Access>
+        <Location left="354" top="131" />
+        <Size width="162" height="570" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int einser</Member>
+        <Member type="Field">int zweier</Member>
+        <Member type="Field">int dreier</Member>
+        <Member type="Field">int vierer</Member>
+        <Member type="Field">int fuenfer</Member>
+        <Member type="Field">int sechser</Member>
+        <Member type="Field">int dreierpasch</Member>
+        <Member type="Field">int viererpasch</Member>
+        <Member type="Field">bool fullHouse</Member>
+        <Member type="Field">bool kleineStrasse</Member>
+        <Member type="Field">bool grosseStrasse</Member>
+        <Member type="Field">bool kniffel</Member>
+        <Member type="Field">int chance</Member>
+        <Member type="Property">public int Einser { get; set; }</Member>
+        <Member type="Property">public int Zweier { get; set; }</Member>
+        <Member type="Property">public int Dreier { get; set; }</Member>
+        <Member type="Property">public int Vierer { get; set; }</Member>
+        <Member type="Property">public int Fuenfer { get; set; }</Member>
+        <Member type="Property">public int Sechser { get; set; }</Member>
+        <Member type="Property">public int GesamtOben { get; set; }</Member>
+        <Member type="Property">public int Dreierpasch { get; set; }</Member>
+        <Member type="Property">public int Viererpasch { get; set; }</Member>
+        <Member type="Property">public bool FullHouse { get; set; }</Member>
+        <Member type="Property">public bool KleineStrasse { get; set; }</Member>
+        <Member type="Property">public bool GrosseStrasse { get; set; }</Member>
+        <Member type="Property">public bool Kniffel { get; set; }</Member>
+        <Member type="Property">public int Chance { get; set; }</Member>
+        <Member type="Property">public int GesamtUnten { get; set; }</Member>
+        <Member type="Property">public int Ergebnis { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Spieler</Name>
+        <Access>Public</Access>
+        <Location left="665" top="131" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">string name</Member>
+        <Member type="Field">List&lt;Kniffel&gt; spielstaende</Member>
+        <Member type="Property">public string Name { get; set; }</Member>
+        <Member type="Property">public List&lt;Kniffel&gt; Spielstaende { get; set; }</Member>
+        <Member type="Constructor">public Spieler(string name)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="2" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
