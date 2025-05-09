@@ -18,7 +18,7 @@
         <Member type="Property">public int Wurfergebnis { get; }</Member>
         <Member type="Property">public Rectangle Rectangle { get; }</Member>
         <Member type="Property">public bool Hold { get; set; }</Member>
-        <Member type="Method">public int Wuerfeln()</Member>
+        <Member type="Method">public void Wuerfeln()</Member>
         <Member type="Constructor">public Wuerfel(int seiten)</Member>
         <Modifier>None</Modifier>
       </Entity>
